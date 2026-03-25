@@ -1,0 +1,8 @@
+Öppna PowerShell
+Inom consolen skrive "cd" sen tryck på "tab" knappen tills du får något som ser ut som det her:
+PS C:\Users\hollo> cd '.\Desktop\Js2 Slutproject back\'
+Klick på enter för att försätta
+Först så skriv i consolen "npm install" för att få in alla liberies inom foldern (Viktigt)
+Efter det så skriv inom consolen "npm run build" för att bygga foldern
+Obs: du behöver att refresha sidan när du lägger en ny member.
+Obs: du behöver både front och back delen spm kör på samma gång för att projectet ska fungera.

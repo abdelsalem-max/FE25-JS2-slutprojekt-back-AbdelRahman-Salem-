@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Chara",
+    "category": "boat",
+    "id": "92567dd9-36d1-4fd7-a173-1d66fd80eed2"
+  },
+  {
+    "name": "Duke",
+    "category": "walker",
+    "id": "5faf69d1-9b36-4e74-baff-85ba7c119527"
+  },
+  {
+    "name": "Forked",
+    "category": "rocket",
+    "id": "bc2e4f37-741d-4ff0-803f-112dcd980d24"
+  },
+  {
+    "name": "abdel",
+    "category": "rocket",
+    "id": "8b3a8368-65b0-431f-94e3-4bf60af3e611"
+  }
+]
