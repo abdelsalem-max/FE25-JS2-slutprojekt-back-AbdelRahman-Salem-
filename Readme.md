@@ -3,6 +3,7 @@
 - PS C:\Users\hollo> cd '.\Desktop\Js2 Slutproject back\'
 - Klick på enter för att försätta
 - Först så skriv i consolen "npm install" för att få in alla liberies inom foldern (Viktigt)
+- Om en vulnerability kkomer up så bara skirv inom consolen "npm audit fix" och det ska fixa problemet.
 - Efter det så skriv inom consolen "npm run build" för att bygga foldern
 - Obs: du behöver att refresha sidan när du lägger en ny member.
 - Obs: du behöver både front och back delen spm kör på samma gång för att projectet ska fungera.
