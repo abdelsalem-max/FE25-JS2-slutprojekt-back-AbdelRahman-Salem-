@@ -5,5 +5,5 @@
 - Först så skriv i consolen "npm install" för att få in alla liberies inom foldern (Viktigt)
 - Om en vulnerability kkomer up så bara skirv inom consolen "npm audit fix" och det ska fixa problemet.
 - Efter det så skriv inom consolen "npm run build" för att bygga foldern
-- Obs: du behöver att refresha sidan när du lägger en ny member.
+- Obs: du behöver att refresha sidan när du lägger en ny member eller när du tar bort en assigment from "done".
 - Obs: du behöver både front och back delen spm kör på samma gång för att projectet ska fungera.
