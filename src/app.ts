@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { addList, addMembers, moveList, readList, readMembers } from "./filesystem";
+import { addList, addMembers, moveList, readList, readMembers, removeWork } from "./filesystem";
 
 export const app = express();
 app.use(express.json());
@@ -38,3 +38,11 @@ app.post("/member", async (req, res) => {
   await addMembers(req.body);
   res.json({ message: "member added" });
 });
+
+app.delete("/assignment/delete", async (req, res) => {
+  const AssignmentList = (await readList()) + "id:" + JSON.stringify(req.body.status)+ " assignment moved";
+  //await addList (req.body)
+  const assignmentId= req.body.id as string;
+  await removeWork( assignmentId)
+  res.json(AssignmentList +"Removed"+assignmentId);
+})

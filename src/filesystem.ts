@@ -42,3 +42,10 @@ export const addMembers = async (newMember: Members) => {
   newMember.id = crypto.randomUUID();
   await fs.writeFile(PATH_members, JSON.stringify(Members, null, 2));
 };
+
+export const removeWork = async (id: string) => {
+  const jsonWork = await fs.readFile(PATH_work, "utf-8");
+ let objWork = JSON.parse(jsonWork);
+  objWork = objWork.filter((item:Assigment ) => item.id !== id)
+  await fs.writeFile(PATH_work, JSON.stringify(objWork, null, 2));
+}

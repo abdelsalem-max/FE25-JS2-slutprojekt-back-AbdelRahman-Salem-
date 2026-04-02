@@ -36,3 +36,10 @@ exports.app.post("/member", async (req, res) => {
     await (0, filesystem_1.addMembers)(req.body);
     res.json({ message: "member added" });
 });
+exports.app.delete("/assignment/delete", async (req, res) => {
+    const AssignmentList = (await (0, filesystem_1.readList)()) + "id:" + JSON.stringify(req.body.status) + " assignment moved";
+    //await addList (req.body)
+    const assignmentId = req.body.id;
+    await (0, filesystem_1.removeWork)(assignmentId);
+    res.json(AssignmentList + "Removed" + assignmentId);
+});
